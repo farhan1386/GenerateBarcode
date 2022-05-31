@@ -13,7 +13,7 @@ namespace GenerateBarcode
 
         protected void BtnGenerateBarcode_Click(object sender, EventArgs e)
         {
-            System.Web.UI.WebControls.Image barcodeImage = new System.Web.UI.WebControls.Image();
+            //System.Web.UI.WebControls.Image barcodeImage = new System.Web.UI.WebControls.Image();
             string generatebarcode = txtGenerateBarcode.Text;
             GeneratedBarcode barcode = BarcodeWriter.CreateBarcode(generatebarcode, BarcodeWriterEncoding.Code128);
             barcode.ResizeTo(400, 120);
